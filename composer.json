@@ -1,0 +1,36 @@
+{
+    "name": "sashalenz/wiretable-money-bundle",
+    "description": "Money field, column and casts for Wiretable Package",
+    "homepage": "https://github.com/sashalenz/wiretable-money-bundle",
+    "type": "library",
+    "require": {
+        "moneyphp/money": "^3.3",
+        "sashalenz/wiretable": "^1.1"
+    },
+    "authors": [
+        {
+            "name": "Oleksandr Petrovskyi",
+            "email": "sashalenz@gmail.com",
+            "homepage": "https://github.com/sashalenz",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Sashalenz\\WiretableMoneyBundle\\": "src"
+        }
+    },
+    "license": "MIT",
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sashalenz\\Wiretable\\WiretableMoneyBundleServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
