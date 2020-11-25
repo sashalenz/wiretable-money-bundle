@@ -21,4 +21,9 @@ class MoneyColumn extends Column
 
         return $moneyFormatter->format($value);
     }
+
+    public function render()
+    {
+//
+    }
 }

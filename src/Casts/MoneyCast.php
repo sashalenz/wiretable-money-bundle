@@ -64,7 +64,7 @@ class MoneyCast implements CastsAttributes
     private function getCurrencyValue($model, $attributes)
     {
         if (is_null($this->currency)) {
-            Config::get('app.currency');
+            return Config::get('app.currency');
         }
 
         if (array_key_exists($this->currency, $attributes)) {
