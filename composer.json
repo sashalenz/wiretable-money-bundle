@@ -5,7 +5,7 @@
     "type": "library",
     "require": {
         "moneyphp/money": "^3.3",
-        "sashalenz/wiretable": "^1.1"
+        "sashalenz/wiretable": "@dev"
     },
     "authors": [
         {
@@ -13,6 +13,15 @@
             "email": "sashalenz@gmail.com",
             "homepage": "https://github.com/sashalenz",
             "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "*",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "autoload": {
@@ -27,7 +36,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Sashalenz\\Wiretable\\WiretableMoneyBundleServiceProvider"
+                "Sashalenz\\WiretableMoneyBundle\\WiretableMoneyBundleServiceProvider"
             ]
         }
     },
