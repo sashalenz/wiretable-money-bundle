@@ -25,7 +25,7 @@ class MoneyCast implements CastsAttributes
      * @param array $attributes
      * @return mixed|Money
      */
-    public function get($model, string $key, $value, array $attributes)
+    public function get($model, string $key, $value, array $attributes): ?Money
     {
         if (is_null($value)) {
             return null;
@@ -41,7 +41,7 @@ class MoneyCast implements CastsAttributes
      * @param array $attributes
      * @return array|mixed
      */
-    public function set($model, string $key, $value, array $attributes)
+    public function set($model, string $key, $value, array $attributes): array
     {
         if (is_array($value) && array_key_exists('amount', $value) && array_key_exists('currency', $value)) {
             $value = new Money($value['amount'], new Currency($value['currency']));
@@ -61,7 +61,7 @@ class MoneyCast implements CastsAttributes
         return [$key => $value->getAmount()];
     }
 
-    private function getCurrencyValue($model, $attributes)
+    private function getCurrencyValue($model, $attributes): ?string
     {
         if (is_null($this->currency)) {
             return Config::get('app.currency');

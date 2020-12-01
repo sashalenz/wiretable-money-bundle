@@ -21,7 +21,7 @@
                        step="0.01"
                        min="0"
                        x-bind:value="value.amount / 100"
-                       @change="value = { amount: $event.target.value * 100, currency: value.currency }"
+                       @change="value = { amount: Math.round(parseFloat($event.target.value * 100)), currency: value.currency }"
                 >
                 <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
                     <span class="text-gray-500 sm:text-sm" x-text="value.currency"></span>

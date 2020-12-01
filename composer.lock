@@ -1375,16 +1375,16 @@
         },
         {
             "name": "sashalenz/wiretable",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sashalenz/wiretable.git",
-                "reference": "bc68c3d5a90afb093a2f54776f6377f442689dc5"
+                "reference": "795ce69dda894a7acef047ebaf525263e039df8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sashalenz/wiretable/zipball/bc68c3d5a90afb093a2f54776f6377f442689dc5",
-                "reference": "bc68c3d5a90afb093a2f54776f6377f442689dc5",
+                "url": "https://api.github.com/repos/sashalenz/wiretable/zipball/795ce69dda894a7acef047ebaf525263e039df8c",
+                "reference": "795ce69dda894a7acef047ebaf525263e039df8c",
                 "shasum": ""
             },
             "require": {
@@ -1435,9 +1435,9 @@
             ],
             "support": {
                 "issues": "https://github.com/sashalenz/wiretable/issues",
-                "source": "https://github.com/sashalenz/wiretable/tree/1.2.0"
+                "source": "https://github.com/sashalenz/wiretable/tree/1.2.1"
             },
-            "time": "2020-11-25T14:37:32+00:00"
+            "time": "2020-11-26T12:41:05+00:00"
         },
         {
             "name": "spatie/laravel-query-builder",
